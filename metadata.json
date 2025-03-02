@@ -1,0 +1,28 @@
+{
+    "name": "pedestrian-occlusion-pipeline",
+    "description": "A pipeline to assist with the pedestrian occlusion problem",
+    "parameters": [
+      {
+        "name": "project",
+        "label": "Project ID",
+        "helpText": "The Google Cloud project ID."
+      },
+      {
+        "name": "temp_location",
+        "label": "Temporary Location",
+        "helpText": "The GCS location for temporary files."
+      },
+      {
+        "name": "sdk_container_image",
+        "label": "SDK Container Image",
+        "helpText": "The custom container image for the Dataflow workers."
+      },
+      {
+        "name": "streaming",
+        "label": "Streaming",
+        "helpText": "Whether the pipeline is streaming.",
+        "isOptional": true,
+        "default": "true"
+      }
+    ]
+  }
